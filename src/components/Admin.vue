@@ -49,15 +49,19 @@
         </tbody>
       </table>
     </div>
+    <Login />
   </div>
 </template>
 
 <script>
 import NewPizza from './NewPizza'
+import Login from './Login'
+
 export default {
   name: "admin",
   components: {
-    NewPizza
+    NewPizza,
+    Login
   }
 }
 </script>
