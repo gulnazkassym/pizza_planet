@@ -37,6 +37,7 @@
 </template>
 
 <script>
+import { dbMenuRef } from '../firebase'
 export default {
   name: 'addNewPizza',
   data() {
@@ -56,7 +57,7 @@ export default {
   },
   methods: {
     add() {
-      alert('Method trigerred')
+      dbMenuRef.add(this.newPizza)
     }
   }
 }
