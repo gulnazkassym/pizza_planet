@@ -97,7 +97,7 @@ export default {
       }
     },
     addNewOrder() {
-      this.$store.commit('addOrder', this.basket)
+      this.$store.dispatch('addOrder', this.basket)
       this.basket = []
       this.basketText = 'Thank you! Your order has been placed :)'
     }
