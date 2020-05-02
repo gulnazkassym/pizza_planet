@@ -79,6 +79,8 @@ export default {
     width: 30%;
   }
 
+  
+
   @media screen and (min-width: 900px) {
     .info_block {
       width: 100%;
@@ -103,6 +105,23 @@ export default {
 
     .info_block img {
       max-width: 100%;
+    }
+   
+    input, textarea {
+      font-size: 1.1rem;
+    }
+
+    button {
+      border: none;
+      font-size: 1.1rem; 
+    }
+
+    .btn_green {
+      background: rgba(101, 168, 101);
+    }
+
+    .btn_red {
+      background: rgba(241, 70, 70);
     }
   }
 </style>
