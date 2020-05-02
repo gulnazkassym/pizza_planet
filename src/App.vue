@@ -12,11 +12,17 @@
 
 <script>
 import Header from './components/Header'
+import { dbMenuRef } from './firebase'
+import { dbOrdersRef } from './firebase'
 
 export default {
   name: 'App',
   components: {
     appHeader: Header
+  },
+  created() {
+    this.$store.dispatch('setMenuRef', dbMenuRef)
+    this.$store.dispatch('setOrdersRef', dbOrdersRef)
   }
 }
 </script>
